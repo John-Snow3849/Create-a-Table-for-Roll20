@@ -1,0 +1,27 @@
+on("ready", function() {
+    // Function to create a Rollable Table with provided list of items
+    function createRollableTable(tableName, itemList) {
+        var table = createObj("rollabletable", {
+            name: tableName
+        });
+
+        _.each(itemList, function(item) {
+            createObj("tableitem", {
+                name: item,
+                _rollabletableid: table.id
+            });
+        });
+
+        log("Rollable Table '" + tableName + "' created with " + itemList.length + " items.");
+    }
+
+    // Example usage
+    var tableName = "MyCustomTable";
+    var itemList = [
+        "A Trip Away Inn Tablet","Abacus","Aboleth Orb","Absorbing Tattoo","Acheron Blade","Acheron Blade","Acheron Greatsword","Acheron Longsword","Acheron Rapier","Acheron Scimitar","Acheron Shortsword","Acid","Acid Arrow","Acid Bolt","Acid Bullet","Adamantine Armor","Adamantine Breastplate","Adamantine Chain Mail","Adamantine Chain Shirt","Adamantine Half Plate Armor","Adamantine Plate Armor","Adamantine Ring Mail","Adamantine Scale Mail","Adamantine Splint Armor","Agent's Pack","Airship","Akaasit Blade",
+    
+    
+    ]; // Replace with your list of names
+
+    createRollableTable(tableName, itemList);
+});
