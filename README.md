@@ -1,5 +1,5 @@
 # Create-a-Table-for-Roll20
-This is to create a table of items or monsters for Roll20
+This is to create a table of items, spells, or monsters for Roll20
 Edit in notepad ++ or notepad. 
 You can change the table name in line 19, or change it after running in Roll20.
 In line 20, item names, while using the same format, change the names of objects to the names of the desired objects(monster names/items/etc.)
